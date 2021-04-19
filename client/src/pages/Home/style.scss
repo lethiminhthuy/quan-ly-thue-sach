@@ -1,0 +1,47 @@
+.book-list--wrapped {
+  flex: 1;
+  overflow: hidden;
+
+  &__search {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &__result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__result--false {
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  &__list--add {
+    display: flex;
+    visibility: hidden;
+
+    &--visible {
+      visibility: visible !important;
+    }
+
+    & button {
+      margin: 24px 0 1rem auto;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .book-list--wrapped {
+    padding: 24px;
+
+    &__search {
+      padding: 0;
+    }
+  }
+}

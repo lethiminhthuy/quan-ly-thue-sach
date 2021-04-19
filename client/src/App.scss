@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  align-items: center;
+}
+
+header > button {
+  margin-left: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background: #ebedf0;
+}
+
+.ant-layout-sider-children .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.banner__wrapped img {
+  width: 100%;
+}
+
+.slider--wrapped {
+  position: fixed;
+  transition: all 0.3s;
+}
